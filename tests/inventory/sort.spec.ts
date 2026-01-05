@@ -38,7 +38,7 @@ test.describe('Inventory - Sorting (Sauce Demo)', () => {
 
     // 정렬: 이름 Z->A
     await sortDropdown.selectOption('za');
-    await expect(sortDropdown).toHaveValue('lohi'); //드롭다운 값이 실제로 바뀌었는지 검증   
+    await expect(sortDropdown).toHaveValue('za'); //드롭다운 값이 실제로 바뀌었는지 검증   
 
     // 상품명 목록 수집
     const names = await page.locator('.inventory_item_name').allTextContents();
