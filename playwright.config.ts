@@ -3,6 +3,11 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
 
+  //기본 파일은 테스트하지 않는다 
+  testIgnore: [
+    '**/_legacy/**',
+  ],
+
   // 포트폴리오 #1은 "안정 + 재현성" 중심
   fullyParallel: true,
   workers: 2,
