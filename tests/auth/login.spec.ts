@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { loginAsStandardUser } from '../../utils/auth';
 
 test.describe('Auth - Sauce Demo', () => {
-  test('Login succeeds with valid credentials (standard_user)', async ({ page }) => {
+  test('@smoke Login succeeds with valid credentials (standard_user)', async ({ page }) => {
     // baseURL이 config에 있으므로 '/'만으로 충분함
     // Target application: https://www.saucedemo.com => Defined "playwright.config.ts"
     await loginAsStandardUser(page);
