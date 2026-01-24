@@ -1,3 +1,7 @@
+![Playwright CI](https://github.com/iampse/playwright-saucedemo-e2e/actions/workflows/playwright.yml/badge.svg)
+
+
+
 Playwright E2E Test Automation – Sauce Demo
 
 
