@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install mock-api dependencies
+        run: npm ci --prefix mock-api
+
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
